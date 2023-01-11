@@ -1,0 +1,85 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #880e4f;
+  color: #fff;
+}
+
+.nav {
+  width: 90%;
+  margin: 0 auto;
+  height: 70px;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-areas: "logo menu";
+  justify-content: space-between;
+  align-items: center;
+
+  &:has(:target) {
+    --img-menu: scale(0);
+    --img-close: scale(1);
+    --clip: inset(0 0 0 0);
+  }
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  &__menu {
+    grid-area: menu;
+    position: relative;
+    z-index: 10;
+
+    transform: var(--img-menu, scale(1));
+
+    &--close {
+      transform: var(--img-close, scale(0));
+    }
+  }
+
+  &__icon {
+    width: 30px;
+    display: block;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  clip-path: var(--clip, inset(0 0 100% 100%));
+  width: 75%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000;
+  transition: clip-path 0.5s;
+
+  display: grid;
+  align-content: center;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #b6babe;
+    gap: 0.5em;
+    padding: 1.5em;
+  }
+
+  &__arrow {
+    margin-left: auto;
+  }
+}
