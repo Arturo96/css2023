@@ -51,6 +51,7 @@ body {
   position: absolute;
   clip-path: var(--clip, inset(0 0 100% 100%));
   width: 75%;
+  max-width: 300px;
   right: 0;
   top: 0;
   bottom: 0;
@@ -69,6 +70,32 @@ body {
   color: #b6babe;
   gap: 0.5em;
   padding: 1.5em;
+  transition: color 0.5s;
+}
+.dropdown__link:hover {
+  color: #fff;
+}
+.dropdown__content {
+  display: grid;
+  grid-template-rows: 0fr;
+}
+.dropdown__submenu {
+  overflow: hidden;
+}
+.dropdown__subitem {
+  list-style: none;
+}
+.dropdown__sublink {
+  display: block;
+  color: #b6babe;
+  text-decoration: none;
+  width: 85%;
+  background-color: teal;
+  transition: color 0.5s;
+  margin-left: auto;
+}
+.dropdown__sublink:hover {
+  color: #fff;
 }
 .dropdown__arrow {
   margin-left: auto;
