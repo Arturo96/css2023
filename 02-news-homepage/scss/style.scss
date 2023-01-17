@@ -22,7 +22,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 
 .container {
@@ -177,6 +177,43 @@ img {
   }
 }
 
+.footer {
+  margin-top: 6rem;
+  display: grid;
+  gap: 2rem;
+
+  &__post {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__img {
+    display: block;
+    max-width: 100px;
+  }
+
+  &__texts {
+    height: 100%;
+    display: grid;
+    align-content: space-between;
+  }
+
+  &__num {
+    font-size: 1.5em;
+    color: var(--gray);
+  }
+
+  &__title {
+    font-weight: 800;
+  }
+
+  &__text {
+    color: var(--dark-gray);
+    line-height: 1.5;
+  }
+}
+
 @media (min-width: 1024px) {
   .nav {
     margin: 4rem 0 2rem;
@@ -228,7 +265,7 @@ img {
     }
 
     &__texts {
-      width: 55%;
+      width: 58%;
     }
 
     &__title {
@@ -244,5 +281,9 @@ img {
     &__title {
       margin-bottom: 0;
     }
+  }
+
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
