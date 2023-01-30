@@ -1,0 +1,81 @@
+:root {
+  --size: 25px;
+  --red: #ff0000;
+  --brown: #944908;
+  --skin: #fac08e;
+  --black: #000;
+  --blue: #0073c8;
+  --yellow: #feff00;
+
+  --shadow-mario: 
+  /* Fila 1 */ 1em 0 var(--red), 2em 0 var(--red),
+    3em 0 var(--red), 4em 0 var(--red), 5em 0 var(--red),
+    /* Fila 2 */ -1em 1em var(--red), 0 1em var(--red), 1em 1em var(--red),
+    2em 1em var(--red), 3em 1em var(--red), 4em 1em var(--red),
+    5em 1em var(--red), 6em 1em var(--red), 7em 1em var(--red),
+    8em 1em var(--red), /* Fila 3 */ -1em 2em var(--brown), 0 2em var(--brown),
+    1em 2em var(--brown), 2em 2em var(--skin), 3em 2em var(--skin),
+    4em 2em var(--skin), 5em 2em var(--black), 6em 2em var(--skin),
+    /* Fila 4 */ -2em 3em var(--brown), -1em 3em var(--skin), 0 3em var(--brown),
+    1em 3em var(--skin), 2em 3em var(--skin), 3em 3em var(--skin),
+    4em 3em var(--skin), 5em 3em var(--black), 6em 3em var(--skin),
+    7em 3em var(--skin), 8em 3em var(--skin), /* Fila 5 */ -2em 4em var(--brown),
+    -1em 4em var(--skin), 0 4em var(--brown), 1em 4em var(--brown),
+    2em 4em var(--skin), 3em 4em var(--skin), 4em 4em var(--skin),
+    5em 4em var(--skin), 6em 4em var(--black), 7em 4em var(--skin),
+    8em 4em var(--skin), 9em 4em var(--skin), /* Fila 6 */ -2em 5em var(--brown),
+    -1em 5em var(--brown), 0 5em var(--skin), 1em 5em var(--skin),
+    2em 5em var(--skin), 3em 5em var(--skin), 4em 5em var(--skin),
+    5em 5em var(--black), 6em 5em var(--black), 7em 5em var(--black),
+    8em 5em var(--black), /* Fila 7 */ 0 6em var(--skin), 1em 6em var(--skin),
+    2em 6em var(--skin), 3em 6em var(--skin), 4em 6em var(--skin),
+    5em 6em var(--skin), 6em 6em var(--skin), 7em 6em var(--skin),
+    /* Fila 8 */ -1em 7em var(--red), 0 7em var(--red), 1em 7em var(--blue),
+    2em 7em var(--red), 3em 7em var(--red), 4em 7em var(--red),
+    5em 7em var(--red), /* Fila 9 */ -2em 8em var(--red), -1em 8em var(--red),
+    0 8em var(--red), 1em 8em var(--blue), 2em 8em var(--red),
+    3em 8em var(--red), 4em 8em var(--blue), 5em 8em var(--red),
+    6em 8em var(--red), 7em 8em var(--red), /* Fila 10 */ -3em 9em var(--red),
+    -2em 9em var(--red), -1em 9em var(--red), 0 9em var(--red),
+    1em 9em var(--blue), 2em 9em var(--blue), 3em 9em var(--blue),
+    4em 9em var(--blue), 5em 9em var(--red), 6em 9em var(--red),
+    7em 9em var(--red), 8em 9em var(--red), /* Fila 11 */ -3em 10em var(--skin),
+    -2em 10em var(--skin), -1em 10em var(--red), 0 10em var(--blue),
+    1em 10em var(--yellow), 2em 10em var(--blue), 3em 10em var(--blue),
+    4em 10em var(--yellow), 5em 10em var(--blue), 6em 10em var(--red),
+    7em 10em var(--skin), 8em 10em var(--skin),
+    /* Fila 12 */ -3em 11em var(--skin), -2em 11em var(--skin),
+    -1em 11em var(--skin), 0 11em var(--blue), 1em 11em var(--blue),
+    2em 11em var(--blue), 3em 11em var(--blue), 4em 11em var(--blue),
+    5em 11em var(--blue), 6em 11em var(--skin), 7em 11em var(--skin),
+    8em 11em var(--skin), /* Fila 13 */ -3em 12em var(--skin),
+    -2em 12em var(--skin), -1em 12em var(--blue), 0 12em var(--blue),
+    1em 12em var(--blue), 2em 12em var(--blue), 3em 12em var(--blue),
+    4em 12em var(--blue), 5em 12em var(--blue), 6em 12em var(--blue),
+    7em 12em var(--skin), 8em 12em var(--skin),
+    /* Fila 14 */ -1em 13em var(--blue), 0 13em var(--blue),
+    1em 13em var(--blue), 4em 13em var(--blue), 5em 13em var(--blue),
+    6em 13em var(--blue), /* Fila 15 */ -2em 14em var(--brown),
+    -1em 14em var(--brown), 0 14em var(--brown), 5em 14em var(--brown),
+    6em 14em var(--brown), 7em 14em var(--brown),
+    /* Fila 16 */ -3em 15em var(--brown), -2em 15em var(--brown),
+    -1em 15em var(--brown), 0 15em var(--brown), 5em 15em var(--brown),
+    6em 15em var(--brown), 7em 15em var(--brown), 8em 15em var(--brown);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mario {
+  margin: 10rem auto;
+  width: var(--size);
+  height: var(--size);
+  font-size: var(--size);
+  background-color: var(--red);
+  box-shadow: var(--shadow-mario);
+}
