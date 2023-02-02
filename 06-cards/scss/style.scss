@@ -21,7 +21,7 @@ body {
 
 .small {
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .card {
@@ -83,6 +83,10 @@ body {
     &--last {
       border-right: none;
     }
+  }
+
+  &__stat {
+    font-weight: 600;
   }
 
   &__number {
