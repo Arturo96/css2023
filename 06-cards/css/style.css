@@ -1,0 +1,85 @@
+*,
+::before,
+::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gradient-body: linear-gradient(#8f8a8c, #98735d);
+  --gradient-barbarian: linear-gradient(#9ea3a1, #9a7b68);
+  --orange: #ec9c3c;
+  --rounded: 10px;
+}
+
+body {
+  min-height: 100vh;
+  background-image: var(--gradient-body);
+  font-family: "Raleway", sans-serif;
+}
+
+.small {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.card {
+  width: 270px;
+  margin: 5rem auto;
+  border-radius: var(--rounded);
+}
+.card__picture {
+  position: relative;
+  background-image: var(--gradient-barbarian);
+  border-radius: var(--rounded) var(--rounded) 0 0;
+  height: 190px;
+}
+.card__img {
+  bottom: -15px;
+  right: -10px;
+  position: absolute;
+  display: block;
+  width: 320px;
+  filter: drop-shadow(1px 1px 1px #ccc);
+}
+.card__texts {
+  background-color: #fff;
+  text-align: center;
+  padding: 1.5rem 1.1rem 2rem;
+}
+.card__level {
+  color: var(--orange);
+}
+.card__title {
+  margin-bottom: 1rem;
+}
+.card__text {
+  font-size: 13px;
+  color: #777;
+  font-weight: 600;
+}
+.card__footer {
+  background-color: var(--orange);
+  color: #fafafa;
+  border-radius: 0 0 var(--rounded) var(--rounded);
+}
+.card__stats {
+  text-align: center;
+  border-right: 1px solid #777;
+  width: 32%;
+  display: inline-block;
+  padding: 1rem 0;
+}
+.card__stats--last {
+  border-right: none;
+}
+.card__number {
+  font-weight: 600;
+  font-size: 25px;
+}
+.card__copy {
+  font-size: 8px;
+  vertical-align: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
