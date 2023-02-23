@@ -1,0 +1,267 @@
+*,
+::before,
+::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  color: var(--grayish-blue);
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 675px;
+  margin: 0 auto;
+}
+
+.container-lg {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.cta {
+  display: block;
+  text-decoration: none;
+  background-color: var(--cyan);
+  color: #fff;
+  border-radius: 30px;
+  padding: 1rem 0;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 -2px rgba(0, 0, 0, 0.3) inset;
+  font-weight: 600;
+}
+.cta--mac {
+  background-color: var(--light-blue);
+}
+
+.subtitle {
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1rem;
+}
+
+.hero {
+  padding-top: 7rem;
+  margin-bottom: 8rem;
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.hero__img {
+  display: block;
+  margin: 0 auto 4rem;
+}
+.hero__title {
+  margin-bottom: 1.5rem;
+  color: var(--dark-grayish-blue);
+}
+.hero__content {
+  margin-bottom: 3rem;
+}
+.hero__cta {
+  margin-bottom: 1rem;
+}
+
+.snippets {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.features {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  margin: 0 auto 8rem;
+}
+.features__picture {
+  width: 90%;
+  margin: 0 auto;
+}
+.features__img {
+  display: block;
+}
+.features__texts {
+  display: grid;
+  gap: 3rem;
+}
+
+.feature {
+  text-align: center;
+}
+.feature__title {
+  margin-bottom: 0.75rem;
+}
+
+.anywhere {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.anywhere__content {
+  margin-bottom: 4rem;
+}
+
+.workflow {
+  margin-bottom: 8rem;
+  text-align: center;
+}
+.workflow__container {
+  margin-bottom: 6rem;
+}
+.workflow__items {
+  display: grid;
+  gap: 3rem;
+}
+.workflow__icon {
+  display: block;
+  margin: 0 auto;
+  height: 30px;
+}
+.workflow__title {
+  margin: 1rem 0;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 10rem;
+}
+
+.available {
+  text-align: center;
+  padding-bottom: 8rem;
+}
+.available__content {
+  margin-bottom: 3rem;
+}
+.available__cta {
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: #f5f6f8;
+  text-align: center;
+  padding: 3rem 0;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer__img {
+  width: 50px;
+}
+.footer__nav, .footer__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__link {
+  color: var(--dark-grayish-blue);
+}
+.footer__media {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: url(../images/bg-header-desktop.png);
+    margin-bottom: 6rem;
+  }
+  .hero__img {
+    margin-bottom: 3rem;
+  }
+
+  .cta {
+    display: inline-block;
+    max-width: 200px;
+    margin-right: 0.5rem;
+  }
+
+  .features {
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .features__picture {
+    margin-left: -2rem;
+    width: 70%;
+    align-self: center;
+  }
+  .features__texts {
+    width: 35%;
+    align-content: space-evenly;
+  }
+
+  .feature {
+    text-align: left;
+  }
+  .feature__content {
+    font-size: 1rem;
+  }
+
+  .anywhere__content {
+    margin-bottom: 6rem;
+  }
+
+  .workflow__items {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .workflow__content {
+    font-size: 1rem;
+  }
+
+  .partners {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .footer {
+    text-align: left;
+  }
+  .footer__nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    justify-content: space-between;
+  }
+  .footer__img {
+    width: 75px;
+  }
+  .footer__menu {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    width: 45%;
+  }
+  .footer__media {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
